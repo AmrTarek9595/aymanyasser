@@ -1757,4 +1757,23 @@ header.header.sticky {
 }
 
 
+@media (max-width: 767px) { /* Mobile */ }
 
+@media (min-width: 768px) and (max-width: 1023px) { 
+    
+    .second-img{
+    width:300px;
+    height:514px;
+    margin:auto;
+    min-height: 514px;
+}
+   
+ }
+
+@media (min-width: 1024px) { .second-img{
+    width:410px;
+    height:514px;
+    margin:auto;
+    min-height: 514px;
+}
+    }
