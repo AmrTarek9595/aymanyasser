@@ -1767,4 +1767,11 @@ header.header.sticky {
 }
 
 
+.img-project{
+
+    display: flex;
+    justify-content: center;
+}
+
+
 
