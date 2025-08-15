@@ -128,7 +128,8 @@
         margin-bottom: 12px;
     }
     .portfolio-section .portfolio-content-wrapper .slick-arrow {
-        bottom: -40px;
+        /* bottom: 40px;
+        margin-bottom: 0px; */
     }
     .portfolio-section .shape {
         display: none;
@@ -497,7 +498,7 @@
         margin: 0 auto;
     }
     .portfolio-section .portfolio-wrapper {
-        flex-flow: column-reverse;
+        flex-flow: column;
     }
     .portfolio-section .portfolio-content-wrapper {
         width: 100%;
@@ -514,6 +515,7 @@
     .portfolio-section .portfolio-paging-status {
         left: 140px;
         bottom: -35px;
+        margin-bottom: 0px;
     }
     
     .contact-section .section-title h2,
@@ -841,6 +843,8 @@
     }
     .portfolio-section .portfolio-paging-status {
         bottom: -15px;
+        margin-bottom: 0px;
+
     }
     .portfolio-section .portfolio-content h2 {
         font-size: 30px;
@@ -850,8 +854,9 @@
         text-align: left;
     }
     .portfolio-section .portfolio-content-wrapper .slick-arrow {
-        bottom: -20px;
+        /* bottom: 20px; */
         left: 10px;
+        /* margin-bottom: 0px; */
     }
     .portfolio-section .portfolio-content-wrapper .slick-next {
         left: 70px;

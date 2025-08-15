@@ -506,7 +506,7 @@ a {
 .link-default span{
     height: 53px;
     width: 53px;
-    
+    background: #c99878;
     border-radius: 100%;
     display: inline-flex;
     flex-flow: column;
