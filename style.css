@@ -2,6 +2,10 @@
        aspect-ratio: 1 / 0.75;
     object-fit: cover;
 }
+.reel-img{
+    width: 420px;
+    height: 700px;
+}
 /************************************************
 [Master Stylesheet]
 *************************************************/
