@@ -49,6 +49,11 @@
     .clip-img{
         aspect-ratio: 1 / 0.75;
     object-fit: cover;
+    height: 510px;
+}
+.reel-img{
+    width: 420px;
+    height: 700px;
 }
     .menu-wrapper ul.main-menu {
         max-width: 1080px;
