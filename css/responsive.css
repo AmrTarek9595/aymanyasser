@@ -46,6 +46,10 @@
 
 
 @media (max-width: 1399px) {
+    .clip-img{
+        aspect-ratio: 1 / 0.75;
+    object-fit: cover;
+}
     .menu-wrapper ul.main-menu {
         max-width: 1080px;
     }
