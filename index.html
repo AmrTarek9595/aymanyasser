@@ -625,12 +625,111 @@ U.S. government faces shutdown threat.</p>
       <p>Mohamed Abdel Rahman reflects on the legacy of Aziz Al-Masri, a pivotal figure who dedicated his life to Arab nationalism and resistance.</p>
     </a>
     </div>
+    <div class="item camera">
+        <a href="https://www.instagram.com/reel/C-9hUMgMeLj/?igsh=MXY5bXd3aTFjNzU5aw==" target="_blank">
+        <div class="img-project">
+      <img src="images/projects/shared11.jpg" alt="">
+    </div>
+      <h3>Get Ready for Al-Qadiya (MMA) – The Strongest Championship on August 23 in New Alamein</h3>
+      <p>New Alamein hosts the thrilling Al-Qadiya MMA championship on August 23, promising powerful fights and unmatched excitement.</p>
+    </a>
+    </div>
+
+
+        <div class="item camera">
+        <a href="https://www.youtube.com/watch?v=CreJhVI-Nsw" target="_blank">
+        <div class="img-project">
+      <img src="images/projects/DSC00135-min.jpg" alt="">
+    </div>
+      <h3>Egypt Hosts Munshid Al-Sharjah 15 Auditions: A Stage for the Finest Voices</h3>
+      <p>The Cairo auditions for Munshid Al-Sharjah 15 showcased Egypt’s strong talent in Islamic chanting, setting the stage for inspiring regional competition ahead.</p>
+    </a>
+    </div>
+
+
+
+
+            <div class="item camera">
+        <a href="https://www.youtube.com/watch?v=ha5RKWfT6Qs" target="_blank">
+        <div class="img-project">
+      <img src="images/projects/IMG_4936.jpg" alt="">
+    </div>
+      <h3>From Today, You’ll Master Stuffed Vine Leaves Like a Pro</h3>
+      <p>A creative new method promises to make preparing and rolling vine leaves faster and easier than ever.</p>
+    </a>
+    </div>         
+       <div class="item camera">
+        <a href="https://youtu.be/_CmlaHI-Dek?si=leMipnoMeR_JuGtu" target="_blank">
+        <div class="img-project">
+      <img src="images/projects/shared12.jpg" alt="">
+    </div>
+      <h3>Yasmin El Khatib and Her Husband Reunite in First Video</h3>
+      <p>Despite their many differences, Yasmin El Khatib and her husband share a heartwarming moment, showing that their love for food keeps them together.</p>
+    </a>
+    </div>
   </div>
+  <button id="see-more" style="margin-top:15px; padding:10px 20px; border:none; cursor: pointer;
+
+    margin-right: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;"
+    >
+      See More
+    </button>
 </div>
 
 
     </section>
-    
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".items .item");
+    const seeMoreBtn = document.getElementById("see-more");
+    const radios = document.querySelectorAll("input[name='category']");
+    let currentFilter = "all";
+
+    function showItems(filter) {
+      let visibleCount = 0;
+      items.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          if (visibleCount < 3) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+          visibleCount++;
+        } else {
+          item.style.display = "none";
+        }
+      });
+      // Show button if there are more than 3 in this filter
+      seeMoreBtn.style.display = (visibleCount > 3) ? "inline-block" : "none";
+    }
+
+    // Initial
+    showItems("all");
+
+    // Filter change
+    radios.forEach(radio => {
+      radio.addEventListener("change", function() {
+        currentFilter = this.id;
+        showItems(currentFilter);
+      });
+    });
+
+    // See more click
+    seeMoreBtn.addEventListener("click", function() {
+      items.forEach(item => {
+        if (currentFilter === "all" || item.classList.contains(currentFilter)) {
+          item.style.display = "block";
+        }
+      });
+      seeMoreBtn.style.display = "none";
+    });
+  });
+</script>
     <!-- ======================================= 
         ==Start Skill section==  
     =======================================-->
@@ -1064,6 +1163,8 @@ His professionalism, respectful attitude, and communication skills make him real
 
     <!-- all jQuary activation code here and always it will be bottom of all script tag -->
     <script src="js/main.js"></script>
+
+    
 </body>
 
 
