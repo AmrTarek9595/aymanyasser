@@ -742,6 +742,11 @@
 
 /* ==================Small Mobile Display==============*/
 @media (max-width: 575px) {
+
+    #how_i_begun{
+        display: flex;
+        flex-direction: column;
+    }
     .vertical-line.line2 {
         left: calc(100% / 3 * 2);
     }
