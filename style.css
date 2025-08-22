@@ -939,7 +939,7 @@ header.header.sticky {
 }
 .testimonial-section .single-testimonial .slick-slide {
     position: relative;
-    padding-top: 140px;
+    /* padding-top: 140px; */
 }
 .testimonial-section .single-testimonial img.quote {
     position: absolute;
