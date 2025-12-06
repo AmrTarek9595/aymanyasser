@@ -818,6 +818,7 @@ header.header.sticky {
 .portfolio-section .portfolio-wrapper  {
     display: flex;
     flex-flow: row;
+    position: relative;
     
 }
 .portfolio-section .portfolio-content-wrapper{
@@ -885,6 +886,7 @@ header.header.sticky {
     left: 0;
     opacity: 0.2;
     padding: 0;
+    z-index: 10;
 }
 .portfolio-section .portfolio-content-wrapper .slick-arrow:hover {
     background: #c99878;
@@ -894,10 +896,20 @@ header.header.sticky {
 .portfolio-section .portfolio-content-wrapper .slick-next{
     left: 65px;
 }
+.portfolio-section .portfolio-content-wrapper .slick-prev{
+    left: 0 !important;
+}
 .portfolio-section .portfolio-content-wrapper .slick-prev img{
     transform: rotate(-180deg);
     transform-origin: center center;
     
+}
+.portfolio-section .portfolio-content-wrapper .slick-arrow.slick-disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+.portfolio-section .portfolio-content-wrapper .slick-arrow:not(.slick-disabled) {
+    opacity: 0.5;
 }
 .portfolio-section .portfolio-paging-status {
     position: absolute;
